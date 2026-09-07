@@ -1,92 +1,76 @@
-# PHP Skill Check - MCQ Quiz
+# PHP Skill Check - Simple Quiz System
 
-A simple and interactive 10-question multiple-choice quiz developed using PHP arrays, HTML and CSS.
+## Student Details
 
-The project tests basic PHP knowledge and automatically calculates the user's marks, percentage, attempted questions, wrong answers and performance grade.
-
----
-
-## Project Information
-
-| Field | Details |
-|---|---|
-| Project Name | PHP Skill Check |
-| Project Type | PHP Mini Project |
-| Technology | HTML5, CSS3, PHP |
-| Questions | 10 MCQs |
-| Database | Not Required |
-| Data Storage | PHP Arrays |
+- **Roll Number:** 2442982
+- Name : Komal
+- **Project Name:** PHP Skill Check - Simple Quiz System
+- **Technology:** HTML, CSS, PHP
 
 ---
 
 ## Project Objective
 
-The objective of this project is to create a 10-question multiple-choice quiz using PHP arrays.
+The objective of this mini-project is to develop a simple 10-question multiple-choice quiz using PHP arrays.
 
-The application displays questions and multiple-choice options through an HTML form. After submitting the quiz, PHP compares the selected answers with the correct answers and calculates the final score.
-
-The result page displays:
-
-- Total questions
-- Marks obtained
-- Percentage
-- Correct answers
-- Wrong answers
-- Attempted questions
-- Unattempted questions
-- Performance grade
-- Performance remarks
+The system displays PHP-related multiple-choice questions, accepts answers through an HTML form, checks the selected answers, calculates the total marks and percentage, and displays performance-based remarks.
 
 ---
 
-## Main Features
+## Features
 
-- 10 PHP multiple-choice questions
-- Questions stored inside PHP arrays
-- Four options for every question
+- 10 multiple-choice questions
+- Questions and options stored using PHP arrays
+- Simple and professional user interface
 - Radio-button based answer selection
 - Automatic score calculation
+- Marks calculation
 - Percentage calculation
-- Attempted question count
+- Correct answer count
 - Wrong answer count
-- Unattempted question count
-- Performance-based grade
+- Attempted question count
+- Skipped question count
+- Grade calculation
 - Performance-based remarks
-- Separate result page
 - Try Again option
-- Responsive design
+- Responsive CSS design
 - No database required
-- Mobile-friendly interface
 
 ---
 
-## Performance Criteria
+## Algorithm / Flowchart
 
-The application calculates the percentage using:
+### Algorithm
 
-Percentage = (Score / Total Questions) × 100
+1. Start the application.
+2. Store 10 questions, options, and correct answers in a PHP array.
+3. Display the questions and options using an HTML form.
+4. Allow the user to select answers.
+5. Submit the quiz form.
+6. Retrieve the selected answers using PHP.
+7. Compare each selected answer with the correct answer.
+8. Increase the score for every correct answer.
+9. Calculate the number of wrong and skipped answers.
+10. Calculate the percentage using:
 
-The performance remarks are based on the following criteria:
+   `Percentage = (Score / Total Questions) × 100`
 
-| Percentage | Grade | Remarks |
-|---|---|---|
-| 80% - 100% | A | Excellent performance |
-| 60% - 79% | B | Good performance |
-| 40% - 59% | C | Fair attempt |
-| Below 40% | D | Needs more practice |
+11. Assign a grade according to the percentage.
+12. Display marks, percentage, correct answers, wrong answers, attempted questions, skipped questions, grade, and remarks.
+13. Provide a Try Again option.
+14. Stop.
 
----
-
-## Quiz Flow
+### Flowchart
 
 ```text
 START
   |
   v
-Create PHP Question Array
+Store Questions & Answers
+in PHP Array
   |
   v
-Display 10 MCQs
+Display Quiz Form
   |
   v
 User Selects Answers
@@ -96,6 +80,7 @@ Submit Quiz
   |
   v
 Compare Selected Answers
+with Correct Answers
   |
   v
 Calculate Score
@@ -104,17 +89,143 @@ Calculate Score
 Calculate Percentage
   |
   v
-Calculate Attempted/Wrong/Skipped
+Calculate Correct / Wrong /
+Attempted / Skipped
   |
   v
-Generate Grade & Remarks
+Assign Grade & Remarks
   |
   v
-Display Result Page
+Display Result
   |
   v
-Try Again
-  |
-  v
-END
+Try Again?
+  |       |
+ Yes      No
+  |       |
+  v       v
+Quiz     END
+
+Percentage	Grade	Remarks
+80% - 100%	A	Excellent!
+60% - 79%	B	Good job!
+40% - 59%	C	Fair attempt.
+Below 40%	D	Needs improvement.
+
+Technologies Used
+HTML5
+CSS3
+PHP
+PHP Arrays
+HTML Forms
+
+PHP-Quiz/
+│
+├── index.php
+└── README.md
+index.php
+Contains the complete quiz system including:
+
+PHP question arrays
+Quiz form
+Answer checking
+Score calculation
+Percentage calculation
+Grade calculation
+Performance remarks
+Result display
+CSS styling
+README.md
+Contains project information, objective, features, algorithm, technologies, setup instructions, and output details.
+
+Steps to Run
+Using XAMPP
+Install and open XAMPP.
+Start Apache.
+Create a folder named:
+PHP-Quiz
+
+Place the project folder inside:
+C:\xampp\htdocs\
+
+Make sure index.php is inside the project folder.
+
+Open a web browser.
+
+Visit:
+
+http://localhost/PHP-Quiz/
+
+Answer the questions.
+
+Click Submit Quiz.
+
+The result page will display the marks, percentage, and performance remarks.
+
+Using PHP Built-in Server
+Open the project folder in Command Prompt or Terminal and run:
+
+php -S localhost:8000
+
+Then open:
+
+http://localhost:8000
+
+Output Screenshots
+Add the following screenshots to the GitHub repository:
+
+Quiz page showing the 10 questions.
+Quiz page with selected answers.
+Result page showing marks and percentage.
+Result page showing grade and performance remarks.
+Example screenshot names:
+
+quiz-page.png
+selected-answers.png
+result-page.png
+
+Learning Outcomes
+Through this project, the following PHP concepts are demonstrated:
+
+PHP arrays
+Multidimensional arrays
+Variables
+foreach loop
+if-elseif-else conditions
+HTML forms
+POST method
+Form data handling
+Score calculation
+Percentage calculation
+Dynamic HTML output
+Basic responsive CSS
+Future Enhancements
+The project can be improved by adding:
+
+Student name input
+Quiz timer
+Random questions
+Question navigation
+Database integration
+Login system
+Admin panel
+High-score system
+Multiple quiz categories
+Detailed answer review
+
+Conclusion
+The PHP Skill Check Quiz System is a simple mini-project that demonstrates how PHP can be used to create an interactive multiple-choice quiz.
+The project uses PHP arrays to store questions and answers and uses PHP form handling to calculate the user's score. It also provides percentage, marks, grade, and performance-based remarks without requiring a database.
+
+GitHub Repository
+Project: 2442982_SimpleQuizSystem
+
+Author
+Name:Komal
+Roll Number: 2442982
+
+Project: PHP Skill Check - Simple Quiz System
+
+Technology: HTML, CSS, PHP
+
 
